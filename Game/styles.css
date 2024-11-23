@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Game Container Styling */
+.game-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Round Info */
+#round-info {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffe259;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Buttons Styling */
+button {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for Buttons */
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 94, 98, 0.5);
+}
+
+/* Results Styling */
+#results {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Scores Styling */
+#score p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Reset Button */
+#reset-button {
+  display: none; /* Initially hidden */
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#reset-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(56, 239, 125, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  #round-info {
+    font-size: 1.2rem;
+  }
+
+  #results {
+    font-size: 1rem;
+  }
+}
